@@ -2,9 +2,12 @@
   "name": "template-vite-react-ts-tailwind",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://dlrussel.github.io/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -25,6 +28,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
+    "gh-pages": "5.0.0",
     "postcss": "8.4.23",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "0.2.7",
