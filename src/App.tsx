@@ -1,6 +1,7 @@
 import code from './assets/images/code.svg';
 import githubLogo from './assets/images/github-logo.svg';
 import linkedinLogo from './assets/images/linkedin-logo.svg';
+import systemsImage from './assets/images/systems-image.svg';
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
         >
           Get in touch
         </button>
+        <img src={systemsImage} alt="design graphic" />
       </div>
     </div>
   );
