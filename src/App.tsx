@@ -1,12 +1,13 @@
 import { ReactComponent as Code } from './assets/images/code.svg';
 import { ReactComponent as GithubLogo } from './assets/images/github-logo.svg';
 import { ReactComponent as LinkedinLogo } from './assets/images/linkedin-logo.svg';
+import AboutSection from './components/AboutSection';
 
 import SystemsImage from './components/SystemsImage';
 const App = () => {
   return (
-    <div className="bg-[#FFDEF6] px-8 py-8">
-      <header className="flex items-center justify-between">
+    <>
+      <header className="flex items-center justify-between bg-[#FFDEF6] px-8 py-8 text-[#E60000]">
         <Code className="h-15 w-24" />
         <div className="flex">
           <a
@@ -26,7 +27,11 @@ const App = () => {
           </a>
         </div>
       </header>
-      <div className="flex min-h-screen flex-col items-center justify-center text-[#E60000]">
+      <section
+        id="Home"
+        className="flex min-h-screen flex-col items-center justify-center
+        bg-[#FFDEF6] p-10 text-[#E60000]"
+      >
         <h1 className="mb-6 font-archivo text-6xl uppercase tracking-tight">
           Hi, I&apos;m Diane Russel
         </h1>
@@ -46,8 +51,9 @@ const App = () => {
           Get in touch
         </button>
         <SystemsImage />
-      </div>
-    </div>
+      </section>
+      <AboutSection />
+    </>
   );
 };
 
