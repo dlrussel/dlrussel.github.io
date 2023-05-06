@@ -45,7 +45,7 @@ const App = () => {
         >
           Get in touch
         </button>
-        <SystemsImage height={400} />
+        <SystemsImage />
       </div>
     </div>
   );
