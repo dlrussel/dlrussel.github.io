@@ -1,13 +1,13 @@
-import code from './assets/images/code.svg';
-import githubLogo from './assets/images/github-logo.svg';
-import linkedinLogo from './assets/images/linkedin-logo.svg';
+import { ReactComponent as Code } from './assets/images/code.svg';
+import { ReactComponent as GithubLogo } from './assets/images/github-logo.svg';
+import { ReactComponent as LinkedinLogo } from './assets/images/linkedin-logo.svg';
 import systemsImage from './assets/images/systems-image.svg';
 
 const App = () => {
   return (
     <div className="bg-[#FFDEF6] px-8 py-8">
       <header className="flex items-center justify-between">
-        <img src={code} className="w-24" alt="code tag logo" />
+        <Code className="h-15 w-24" />
         <div className="flex">
           <a
             href="https://github.com/dlrussel"
@@ -15,14 +15,14 @@ const App = () => {
             rel="noopener noreferrer"
             className="mr-3"
           >
-            <img src={githubLogo} className="w-10" alt="github icon" />
+            <GithubLogo className="h-10 w-10 fill-[#E60000] hover:fill-[#ae0000]" />
           </a>
           <a
             href="https://www.linkedin.com/in/diane-russel/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={linkedinLogo} className="w-10" alt="linkedin icon" />
+            <LinkedinLogo className="h-10 w-10 fill-[#E60000] hover:fill-[#ae0000]" />
           </a>
         </div>
       </header>
@@ -37,7 +37,7 @@ const App = () => {
 
         <button
           type="button"
-          className="my-6 rounded-lg border-2 border-[#E60000] bg-white px-5 py-3 font-rubikMono uppercase transition-all hover:bg-white/70"
+          className="my-6 rounded-lg border-2 border-[#E60000] bg-white px-5 py-3 font-rubikMono uppercase transition-all hover:border-[#ae0000] hover:bg-white/70 hover:text-[#ae0000]"
           onClick={(e) => {
             window.location.href = 'mailto:dianerussel@rogers.com';
             e.preventDefault();
