@@ -1,8 +1,8 @@
 import { ReactComponent as Code } from './assets/images/code.svg';
 import { ReactComponent as GithubLogo } from './assets/images/github-logo.svg';
 import { ReactComponent as LinkedinLogo } from './assets/images/linkedin-logo.svg';
-import systemsImage from './assets/images/systems-image.svg';
 
+import SystemsImage from './components/SystemsImage';
 const App = () => {
   return (
     <div className="bg-[#FFDEF6] px-8 py-8">
@@ -45,7 +45,7 @@ const App = () => {
         >
           Get in touch
         </button>
-        <img src={systemsImage} alt="design graphic" />
+        <SystemsImage height={400} />
       </div>
     </div>
   );
