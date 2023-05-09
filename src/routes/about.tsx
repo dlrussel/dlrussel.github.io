@@ -1,10 +1,10 @@
-export default function AboutSection() {
+export default function About() {
   return (
     <section
       id="About"
-      className="min-h-screen bg-[#FAFBFF] p-10 text-black lg:p-28"
+      className="min-h-screen bg-[#FAFAE8] p-10 text-[#ae0000] lg:p-28"
     >
-      <h2 className="mb-6 font-archivo text-5xl uppercase tracking-tight text-[#777FF6]">
+      <h2 className="mb-6 font-archivo text-5xl uppercase tracking-tight text-red">
         About Me
       </h2>
       <p className="text-md font-firaCode uppercase">
@@ -19,7 +19,7 @@ export default function AboutSection() {
         functional, but also elegant in their simplicity.
       </p>
 
-      <h3 className="mb-6 mt-6 border-b-2 border-[#777FF6] font-archivo text-3xl uppercase tracking-tight text-[#777FF6]">
+      <h3 className="mb-6 mt-6 border-b-2 border-red font-archivo text-3xl uppercase tracking-tight text-red">
         Work Experience
       </h3>
 
