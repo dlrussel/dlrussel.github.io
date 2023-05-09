@@ -1,6 +1,9 @@
 module.exports = {
   content: ['index.html', './src/**/*.{js,jsx,ts,tsx,vue,html}'],
   theme: {
+    colors: {
+      red: '#e60000',
+    },
     extend: {
       fontFamily: {
         archivo: ['Archivo Black', 'sans-serif'],
