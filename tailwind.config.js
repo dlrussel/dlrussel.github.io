@@ -1,10 +1,10 @@
 module.exports = {
   content: ['index.html', './src/**/*.{js,jsx,ts,tsx,vue,html}'],
   theme: {
-    colors: {
-      red: '#e60000',
-    },
     extend: {
+      colors: {
+        red: '#e60000',
+      },
       fontFamily: {
         archivo: ['Archivo Black', 'sans-serif'],
         firaCode: ['Fira Code', 'monospace'],
