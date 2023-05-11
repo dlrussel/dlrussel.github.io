@@ -9,7 +9,7 @@ export default function Root() {
   return (
     <>
       <header className="flex items-center justify-between bg-pink px-8 py-8 text-red">
-        <nav className="flex items-center font-bold">
+        <nav className="flex items-center font-fira-code font-bold">
           <Code className="mr-7 w-16 md:w-20" />
 
           <NavLink
