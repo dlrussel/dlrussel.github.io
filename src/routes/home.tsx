@@ -5,7 +5,7 @@ export default function Home() {
     <section
       id="Home"
       className="flex min-h-screen flex-col items-center justify-center
-        bg-[#FFDEF6] p-10 text-red"
+        bg-pink p-10 text-red"
     >
       <h1 className="mb-6 font-archivo text-6xl uppercase tracking-tight">
         Hi, I&apos;m Diane Russel

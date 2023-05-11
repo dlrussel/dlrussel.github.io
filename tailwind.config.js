@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       colors: {
         red: '#e60000',
+        pink: '#ffdef6',
       },
       fontFamily: {
         archivo: ['Archivo Black', 'sans-serif'],
