@@ -5,10 +5,11 @@ module.exports = {
       colors: {
         red: '#e60000',
         pink: '#ffdef6',
+        'off-black': '#342b32',
       },
       fontFamily: {
         archivo: ['Archivo Black', 'sans-serif'],
-        firaCode: ['Fira Code', 'monospace'],
+        'fira-code': ['Fira Code', 'monospace'],
         rubikMono: ['Rubik Mono One', 'sans-serif'],
       },
       keyframes: {
