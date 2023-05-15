@@ -17,7 +17,7 @@ export default function Home() {
 
       <button
         type="button"
-        className="my-6 rounded-lg border-2 border-red bg-white px-5 py-3 font-rubikMono uppercase transition-all hover:border-[#ae0000] hover:bg-white/70 hover:text-[#ae0000]"
+        className="my-6 rounded-2xl border-2 border-off-black bg-white px-8 py-3 font-fira-code font-bold uppercase text-off-black drop-shadow-[3px_3px_rgba(52,43,50,1)] transition-all hover:text-[#ae0000]"
         onClick={(e) => {
           window.location.href = 'mailto:dianerussel2142@gmail.com';
           e.preventDefault();
