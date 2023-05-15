@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <section
       id="Home"
-      className="flex min-h-screen flex-col items-center justify-center
-        bg-pink p-10 text-red"
+      className="flex min-h-[calc(100vh-118px)] flex-col items-center justify-center bg-pink
+        px-10 pb-10 text-red sm:min-h-[calc(100vh-132px)]"
     >
       <h1 className="mb-6 font-archivo text-6xl uppercase tracking-tight">
         Hi, I&apos;m Diane Russel
