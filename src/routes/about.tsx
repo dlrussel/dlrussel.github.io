@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="About"
-      className="grid min-h-screen place-content-center bg-[#FAFBFF] p-10 text-off-black lg:p-28"
+      className="grid min-h-screen place-content-center bg-[#FAFBFF] p-10 text-off-black lg:p-20"
     >
       <div className="max-w-screen-lg">
         <h2 className="mb-6 font-archivo text-5xl uppercase tracking-tight">
