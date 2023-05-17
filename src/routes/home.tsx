@@ -1,4 +1,5 @@
 import SystemsImage from '../components/SystemsImage';
+import ScreenContainer from '../components/ScreenContainer';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       className="grid min-h-[calc(100vh-118px)] bg-pink px-5 pb-10 text-red sm:min-h-[calc(100vh-132px)]
          sm:px-10 sm:pb-16 md:px-20"
     >
-      <div className="flex h-full flex-col items-center justify-center rounded-xl border-4 border-off-black bg-white p-10 font-fira-code drop-shadow-[5px_5px_rgba(52,43,50,1)] sm:p-14 sm:drop-shadow-[15px_15px_rgba(52,43,50,1)] lg:py-24">
+      <ScreenContainer>
         <h1 className="mb-6 font-archivo text-6xl uppercase tracking-tighter">
           Hi, I&apos;m Diane Russel
         </h1>
@@ -27,7 +28,7 @@ export default function Home() {
           Get in touch
         </button>
         <SystemsImage />
-      </div>
+      </ScreenContainer>
     </section>
   );
 }
