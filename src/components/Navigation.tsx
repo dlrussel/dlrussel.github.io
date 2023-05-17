@@ -21,12 +21,13 @@ export default function Navigation() {
                 'border-off-black',
                 'px-6',
                 'py-2',
-                'hover:drop-shadow-[3px_3px_rgba(52,43,50,1)]',
-                'rounded-2xl',
+                'drop-shadow-[1px_2px_rgba(52,43,50,1)]',
+                'hover:drop-shadow-[0_5px_rgba(52,43,50,1)]',
+                'hover:-translate-y-1',
+                'hover:ease-[cubic-bezier(0.5,2.3,0.7,0.7)]',
+                'rounded-3xl',
                 'bg-white',
-                {
-                  'drop-shadow-[3px_3px_rgba(52,43,50,1)]': isActive,
-                },
+                'duration-200',
               )
             }
             end
@@ -44,9 +45,13 @@ export default function Navigation() {
                 'border-off-black',
                 'px-6',
                 'py-2',
-                'hover:drop-shadow-[3px_3px_rgba(52,43,50,1)]',
-                'rounded-2xl',
+                'drop-shadow-[1px_2px_rgba(52,43,50,1)]',
+                'hover:drop-shadow-[0_5px_rgba(52,43,50,1)]',
+                'hover:-translate-y-1',
+                'hover:ease-[cubic-bezier(0.5,2.3,0.7,0.7)]',
+                'rounded-3xl',
                 'bg-white',
+                'duration-200',
                 {
                   'drop-shadow-[3px_3px_rgba(52,43,50,1)]': isActive,
                 },
