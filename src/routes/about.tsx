@@ -1,4 +1,4 @@
-import { ReactComponent as Controls } from '../assets/images/controls.svg';
+import ScreenContainer from '@/components/ScreenContainer';
 
 export default function About() {
   return (
@@ -10,12 +10,8 @@ export default function About() {
         <h2 className="mb-6 font-archivo text-5xl uppercase tracking-tight">
           About Me
         </h2>
-        <div className="mb-16 rounded-xl border-4 border-off-black bg-pink font-fira-code drop-shadow-[20px_20px_rgba(52,43,50,1)]">
-          <div className="flex flex-row items-center justify-between border-b-4 border-off-black px-8 py-3">
-            <h3 className="text-lg font-bold">index.html</h3>
-            <Controls className="h-6" />
-          </div>
-          <p className="text-md bg-[#e1feff] p-8">
+        <ScreenContainer>
+          <p className="text-md">
             I did my formal education at the University of Waterloo in user
             experience design before realizing that my true passion is making
             computers do my bidding and transitioning into software development.
@@ -26,13 +22,13 @@ export default function About() {
             maintainable, performant, accessible and secure solutions that are
             not just functional, but also elegant in their simplicity.
           </p>
-        </div>
+        </ScreenContainer>
 
-        <h3 className="mb-6 mt-6 border-b-2 border-off-black font-archivo text-3xl uppercase tracking-tight">
+        <h3 className="mb-6 mt-12 border-b-2 border-off-black font-archivo text-3xl uppercase tracking-tight">
           Work Experience
         </h3>
 
-        <div>
+        <ScreenContainer>
           <h4 className="mb-2 font-archivo text-xl tracking-tight">
             Full Stack Developer - Shopify
           </h4>
@@ -93,7 +89,7 @@ export default function About() {
               and resolve issues before users were impacted.
             </li>
           </ul>
-        </div>
+        </ScreenContainer>
       </div>
     </section>
   );
