@@ -32,7 +32,7 @@ export default function MobileNavigation() {
           to="/"
           className={({ isActive }) =>
             classNames(
-              'mt-4',
+              'my-4',
               'border-[1px]',
               'border-off-black',
               'px-6',
@@ -49,27 +49,33 @@ export default function MobileNavigation() {
         >
           Home
         </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            classNames(
-              'my-4',
-              'border-[1px]',
-              'border-off-black',
-              'px-6',
-              'py-2',
-              'hover:drop-shadow-[3px_3px_rgba(52,43,50,1)]',
-              'rounded-2xl',
-              'bg-white',
-              {
-                'drop-shadow-[3px_3px_rgba(52,43,50,1)]': isActive,
-              },
-            )
-          }
-          end
-        >
-          About
-        </NavLink>
+        {[
+          { label: 'About', path: '/about' },
+          { label: 'Work', path: '/work' },
+        ].map(({ label, path }) => (
+          <NavLink
+            key={label}
+            to={path}
+            className={({ isActive }) =>
+              classNames(
+                'mb-4',
+                'border-[1px]',
+                'border-off-black',
+                'px-6',
+                'py-2',
+                'hover:drop-shadow-[3px_3px_rgba(52,43,50,1)]',
+                'rounded-2xl',
+                'bg-white',
+                {
+                  'drop-shadow-[3px_3px_rgba(52,43,50,1)]': isActive,
+                },
+              )
+            }
+            end
+          >
+            {label}
+          </NavLink>
+        ))}
       </div>
     </>
   );
