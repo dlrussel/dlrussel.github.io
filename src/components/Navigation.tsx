@@ -28,6 +28,9 @@ export default function Navigation() {
                 'rounded-3xl',
                 'bg-white',
                 'duration-200',
+                {
+                  'drop-shadow-[3px_3px_rgba(52,43,50,1)]': isActive,
+                },
               )
             }
             end
@@ -38,7 +41,7 @@ export default function Navigation() {
         <div className="flex items-center">
           {[
             ['About', '/about'],
-            ['Projects', '/projects'],
+            ['Work', '/work'],
           ].map(([label, path]) => (
             <NavLink
               key={label}

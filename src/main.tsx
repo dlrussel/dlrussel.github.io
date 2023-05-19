@@ -5,6 +5,7 @@ import './index.css';
 
 import Home from './routes/home';
 import About from './routes/about';
+import Work from './routes/work';
 import Root from './routes/root';
 
 const rootElement = document.getElementById('root') as HTMLElement;
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />,
+      },
+      {
+        path: 'work',
+        element: <Work />,
       },
     ],
   },
