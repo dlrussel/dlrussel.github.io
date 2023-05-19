@@ -28,6 +28,9 @@ export default function Navigation() {
                 'rounded-3xl',
                 'bg-white',
                 'duration-200',
+                {
+                  'drop-shadow-[3px_3px_rgba(52,43,50,1)]': isActive,
+                },
               )
             }
             end
@@ -36,30 +39,37 @@ export default function Navigation() {
           </NavLink>
         </div>
         <div className="flex items-center">
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              classNames(
-                'mr-5',
-                'border-[1px]',
-                'border-off-black',
-                'px-6',
-                'py-2',
-                'drop-shadow-[1px_2px_rgba(52,43,50,1)]',
-                'hover:drop-shadow-[0_5px_rgba(52,43,50,1)]',
-                'hover:-translate-y-1',
-                'hover:ease-[cubic-bezier(0.5,2.3,0.7,0.7)]',
-                'rounded-3xl',
-                'bg-white',
-                'duration-200',
-                {
-                  'drop-shadow-[3px_3px_rgba(52,43,50,1)]': isActive,
-                },
-              )
-            }
-          >
-            About
-          </NavLink>
+          {[
+            ['About', '/about'],
+            ['Work', '/work'],
+          ].map(([label, path]) => (
+            <NavLink
+              key={label}
+              to={path}
+              className={({ isActive }) =>
+                classNames(
+                  'mr-5',
+                  'border-[1px]',
+                  'border-off-black',
+                  'px-6',
+                  'py-2',
+                  'drop-shadow-[1px_2px_rgba(52,43,50,1)]',
+                  'hover:drop-shadow-[0_5px_rgba(52,43,50,1)]',
+                  'hover:-translate-y-1',
+                  'hover:ease-[cubic-bezier(0.5,2.3,0.7,0.7)]',
+                  'rounded-3xl',
+                  'bg-white',
+                  'duration-200',
+                  {
+                    'drop-shadow-[3px_3px_rgba(52,43,50,1)]': isActive,
+                  },
+                )
+              }
+            >
+              {label}
+            </NavLink>
+          ))}
+
           <a
             href="https://github.com/dlrussel"
             target="_blank"

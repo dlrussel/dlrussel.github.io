@@ -28,7 +28,7 @@ export default function About() {
           Work Experience
         </h3>
 
-        <ScreenContainer>
+        <ScreenContainer alignment="left">
           <h4 className="mb-2 font-archivo text-xl tracking-tight">
             Full Stack Developer - Shopify
           </h4>
