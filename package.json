@@ -2,7 +2,7 @@
   "name": "template-vite-react-ts-tailwind",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://dlrussel.github.io/",
+  "homepage": "https://www.dianerussel.dev",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
