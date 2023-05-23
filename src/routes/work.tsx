@@ -30,11 +30,11 @@ export default function Work() {
               Transactional Notifications
             </h2>
             <p>
-              Built a transactional notifications system to programatically send
-              targeted notifications with user specific information to partners
-              based on their data and activity. This allowed us to surface
-              important information to partners from within the partners
-              dashboard enabled timely, customizable and relevant communication
+              Built a transactional notifications system to programmatically
+              send targeted notifications with user specific information to
+              partners based on their data and activity. This allowed us to
+              surface important information to partners from within the partners
+              dashboard enabling timely, customizable and relevant communication
               for Shopify partners regarding their business.
             </p>
           </ScreenContainer>
